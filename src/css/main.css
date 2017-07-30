@@ -1,0 +1,7 @@
+@import 'normalize.css';
+
+h1 {
+  color: #004489;
+  display: flex;
+  font-family: sans-serif;
+}
