@@ -45,4 +45,4 @@ gulp.task('watch', ['browsersync'], ()=> {
   gulp.watch(['src/js/main.js'], js)
 })
 
-gulp.task('default', ['css', 'img', 'js', 'browsersync'])
+gulp.task('default', ['css', 'img', 'js'])
