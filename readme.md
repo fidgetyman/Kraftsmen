@@ -4,18 +4,18 @@ A dead simple gulp starter for advanced layouts.
 ## What's inside:
 
 - JS bundling:
- - Webpack
- - Babel
- - ESLint
+  - Webpack
+  - Babel
+  - ESLint
 - CSS bundling:
- - PostCSS
- - Stylelint
- - postcss-import
- - PreCSS
- - postcss-browser-reporter
- - Autoprefixer
- - CSSNano
- - PostCSS-base64 (converts svgs in css into base64)
+  - PostCSS
+  - Stylelint
+  - postcss-import
+  - PreCSS
+  - postcss-browser-reporter
+  - Autoprefixer
+  - CSSNano
+  - PostCSS-base64 (converts svgs in css into base64)
 - Imagemin for image optimization
 - BrowserSync
 
