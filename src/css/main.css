@@ -1,7 +1,6 @@
 @import 'normalize.css';
-
-h1 {
-  color: #004489;
-  display: flex;
-  font-family: sans-serif;
-}
+@import url('./_global.css');
+@import url('./_fonts.css');
+@import url('./partials/_header.css');
+@import url('./partials/_hero.css');
+@import url('./partials/_what-we-do.css');

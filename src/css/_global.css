@@ -1,0 +1,53 @@
+$primary: #fa5d7c;
+$white: #fff;
+$black: #000;
+
+body {
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+}
+
+a {
+  color: $primary;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1076px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px;
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  text-align: center;
+  color: $primary;
+
+  &:active,
+  &:hover,
+  &:link,
+  &:visited,
+  & {
+    text-decoration: none;
+  }
+}
+
+.button__cta {
+  background-color: $primary;
+  color: $white;
+  $white: #fff;
+  $black: #000;
+}
+
+.section--heading {
+  font-family: 'Lato';
+  font-weight: 900;
+  text-align: center;
+  font-size: 42px;
+  margin: 75px 0;
+}

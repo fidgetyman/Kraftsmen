@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+  margin-top: 0;
+}
+
+.header-social {
+  margin-right: auto;
+  margin-left: calc(50% - 233px);
+}
+
+.header-social-button {
+  margin: 0 20px;
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url('../fonts/sourcesans/300.woff2') format('woff2'), url('../fonts/sourcesans/300.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro'), local('SourceSansPro'), url('../fonts/sourcesans/400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('../fonts/sourcesans/700.woff2') format('woff2'), url('../fonts/sourcesans/700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Black'), local('Lato-Black'), url('../fonts/lato/900.woff2') format('woff2'), url('../fonts/lato/900.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
