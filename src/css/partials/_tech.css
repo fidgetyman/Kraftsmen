@@ -1,0 +1,51 @@
+.tech {
+  background: radial-gradient(363.50px at 50% 50%, #FFFFFF 0%, #FFFFFF 72.32%, rgba(255, 255, 255, 0) 100%), url('../img/tech-pattern.png') 50%;
+}
+
+.tech-slider {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: calc((100% / 8 * 6) + (30px * 5));
+}
+
+.tech-slider-item--logo {
+  text-align: center;
+}
+
+.tech-slider-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.tech-slider-item--heading {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 34px;
+  border-bottom: 2px solid $primary;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.tech-slider-item--desc {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.tech-slider-item-text {
+  width: calc((100% / 8 * 4) + (30px * 3));
+}
+
+.tech-slider .flickity-prev-next-button {
+  background: transparent;
+
+  .arrow {
+    fill: $annotation;
+    opacity: .4;
+  }
+
+}

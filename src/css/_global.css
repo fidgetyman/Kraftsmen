@@ -28,6 +28,7 @@ a {
   font-weight: 700;
   text-align: center;
   color: $primary;
+  font-size: 18px;
 
   &:active,
   &:hover,
@@ -36,18 +37,33 @@ a {
   & {
     text-decoration: none;
   }
+
+  &__cta {
+    background-color: $primary;
+    color: $white;
+    $white: #fff;
+    $black: #000;
+  }
+
+  &__stroke {
+    border: 2px solid;
+    font-weight: 500;
+  }
 }
 
-.button__cta {
-  background-color: $primary;
-  color: $white;
-  $white: #fff;
-  $black: #000;
+.centered {
+  display: block;
+  margin: 0 auto;
+  width: calc((100% / 8 * 2) + 30px);
 }
 
-section {
+.section {
   padding: 75px 0;
   padding-bottom: 0;
+
+  &__padded {
+    padding-bottom: 75px;
+  }
 }
 
 .section--heading {
