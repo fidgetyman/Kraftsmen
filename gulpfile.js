@@ -42,7 +42,7 @@ gulp.task('browsersync', serve)
 gulp.task('watch', ['browsersync'], ()=> {
   gulp.watch(['src/css/**/*.css', 'postcss.config.js'], css)
   gulp.watch(['src/img/**/*'], images)
-  gulp.watch(['src/js/main.js'], js)
+  gulp.watch(['src/js/**/*.js'], js)
 })
 
 gulp.task('default', ['css', 'img', 'js'])

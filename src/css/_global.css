@@ -1,6 +1,7 @@
 $primary: #fa5d7c;
 $white: #fff;
 $black: #000;
+$annotation: #727272;
 
 body {
   font-family: 'Source Sans Pro';
@@ -44,10 +45,27 @@ a {
   $black: #000;
 }
 
+section {
+  padding: 75px 0;
+  padding-bottom: 0;
+}
+
 .section--heading {
   font-family: 'Lato';
   font-weight: 900;
   text-align: center;
   font-size: 42px;
-  margin: 75px 0;
+  margin-bottom: 15px;
+
+  &__nosub {
+    margin-bottom: 75px;
+  }
+}
+
+.section--subheading {
+  font-family: 'Source Sans Pro';
+  margin: 0 auto;
+  width: calc(100% / 8 * 6);
+  font-size: 18px;
+  line-height: 1.6;
 }
