@@ -1,5 +1,5 @@
 .codex {
-  background: radial-gradient(363.50px at 50% 50%, #FFFFFF 0%, #FFFFFF 72.32%, rgba(255, 255, 255, 0) 100%), url('../img/codex-pattern.png') 50%;
+  background: radial-gradient(363.50px at 50% 50%, #FFFFFF 0%, #FFFFFF 72.32%, rgba(255, 255, 255, 0) 100%), url('../img/codex-pattern.png') 50% / 35%;
 }
 
 .codex-slider-item {
