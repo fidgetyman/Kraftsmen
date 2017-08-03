@@ -1,3 +1,91 @@
 .contacts {
-  background: radial-gradient(178.38px at 50% 77.07%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), url('../img/contacts-pattern.png');
+  background: radial-gradient(178.38px at 50% 77.07%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), url('../img/contacts-pattern.png') 0 0 / 35%;
+}
+
+.contacts-card {
+  width: calc(100% / 8 * 6);
+  margin: 0 auto;
+  background: $white;
+  padding: 40px 120px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contacts-card--form {
+  margin-top: 40px;
+}
+
+.contacts-card--paragraph {
+  line-height: 25px;
+  width: 100%;
+}
+
+.contacts-card-input {
+  display: flex;
+  width: 100%;
+  margin: 15px 0;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contacts-card-input--icon {
+  background: $primary;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-card-input--field {
+  width: 100%;
+  padding: 15px 20px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  border: 0;
+  outline: none;
+
+  textarea& {
+    min-height: 150px;
+    resize: none;
+  }
+}
+
+.contacts-card-input__email .contacts-card-input--icon {
+  padding: 17px 20px;
+}
+
+.contacts-card-buttons {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: -12.5%;
+}
+
+.contacts-card-socbuttons {
+  display: flex;
+}
+
+.contacts-card--link {
+  border-radius: 100%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.contacts-card--link__vk {
+  background: #4d7198;
+}
+
+.contacts-card--link__mail {
+  background: #b2e0ff;
+}
+
+.contacts-card-send {
+  margin-left: auto;
+  width: 50%;
+
+  .button {
+    width: 100%;
+  }
 }

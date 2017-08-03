@@ -49,6 +49,23 @@ a {
     border: 2px solid;
     font-weight: 500;
   }
+
+  &__iconed {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    img {
+      margin-left: 0;
+      border-right: 1px solid;
+      padding: 10px;
+      padding-right: 20px;
+    }
+    
+    span {
+      margin: 0 auto;
+    }
+  }
 }
 
 .centered {
