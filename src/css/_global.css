@@ -17,7 +17,11 @@ a {
 }
 
 .wrapper {
-  width: 1076px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -61,7 +65,7 @@ a {
       padding: 10px;
       padding-right: 20px;
     }
-    
+
     span {
       margin: 0 auto;
     }
@@ -98,7 +102,7 @@ a {
 .section--subheading {
   font-family: 'Source Sans Pro';
   margin: 0 auto;
-  width: calc(100% / 8 * 6);
+  width: calc(100% / 8 * 4);
   font-size: 18px;
   line-height: 1.6;
 }

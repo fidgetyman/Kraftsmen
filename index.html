@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="dist/css/main.css">
-    <title>Hello world!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  
+    <title>Kraftsmen</title>
   </head>
   <body>
     <div class="wrapper">
       <section class="hero section">
         <header class="header">
-          <img src="dist/img/logo.svg" width="163" height="59" alt="Kraftsmen" class="header--logo">
+          <div class="header-logo">
+            <img src="dist/img/logo.svg" width="163" height="59" alt="Kraftsmen" class="header--logo">
+          </div>
           <div class="header-social">
-            <a href="mailto:team@kraftsmen.ru" class="header-social-button"><img src="dist/img/icons/close-envelope.svg" alt="team@kraftsmen.ru" class="header-social-button--img"></a>
-            <a href="https://vk.com/kraftsmen" class="header-social-button"><img src="dist/img/icons/vk-social-network-logo.svg" alt="мы вконтакте" class="header-social-button--img"></a>
+            <div class="header-social-button">
+              <a href="mailto:team@kraftsmen.ru" class="header-social-button"><img src="dist/img/icons/close-envelope.svg" alt="team@kraftsmen.ru" class="header-social-button--img"></a>
+            </div>
+            <div class="header-social-button">
+              <a href="https://vk.com/kraftsmen" class="header-social-button"><img src="dist/img/icons/vk-social-network-logo.svg" alt="мы вконтакте" class="header-social-button--img"></a>
+            </div>
           </div>
           <div class="header-burger">
             <svg width="46" height="41" viewBox="0 0 46 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -53,389 +65,392 @@
         </header>
         <div class="hero-content">
           <div class="hero-content-text">
+            <div class="hero-content-image"><img src="dist/img/hero-image.svg" alt="Наше ремесло"></div>
             <h1 class="hero--heading">Наше ремесло &ndash; сайты</h1>
             <p class="hero--paragraph">Мы профессионалы своего дела и можем это доказать. Оставьте заявку, и мы покажем, как привлечь больше клиентов в ваш бизнес.</p>
-            <a href="#contacts" class="button button__cta">Хочу больше клиентов!</a>
+            <a href="#contacts" class="button button__cta" style="background-color: #fa5d7c">Хочу больше клиентов!</a>
+
           </div>
-          <div class="hero-content-image">
-            <img src="dist/img/hero-image.svg" alt="">
-          </div>
+
         </div>
         <div class="hero--downarrow"><img src="dist/img/icons/right-arrow.svg" alt=""></div>
       </section>
     </div>
 
-    <section class="what-we-do section">
-      <h1 class="section--heading section--heading__nosub">Чем мы занимаемся</h1>
-      <article class="what-we-do-type what-we-do-type__lp what-we-do-type__left">
-        <div class="wrapper">
-          <div class="what-we-do-type-container">
-            <h1 class="what-we-do-type--heading">Landing Page</h1>
-            <p class="what-we-do-type--text">Продающая посадочная страница – ключ к росту продаж, если она сделана правильно. Мы – мастера по изготовлению таких ключей.</p>
-            <a href="#" class="button button__cta">Это то, что мне нужно</a>
-            <p class="what-we-do-type--annotation">На фото справа – Landing Page для продажи XIM4, устройства для подключения мыши и клавиатуры к игровой приставке. Подробнее – <a href="#portfolio">в портфолио.</a></p>
-          </div>
-        </div>
-      </article>
-      <article class="what-we-do-type what-we-do-type__corp what-we-do-type__right">
-        <div class="wrapper">
-          <div class="what-we-do-type-container">
-            <h1 class="what-we-do-type--heading">Корпоративные сайты</h1>
-            <p class="what-we-do-type--text">Иногда мало просто продать, нужно ещё и донести информацию о бизнесе и завоевать репутацию. Команда Kraftsmen состоит из лучших веб-евангелистов, готовых поведать миру о вас.</p>
-            <a href="#" class="button button__cta">Это то, что мне нужно</a>
-            <p class="what-we-do-type--annotation">На фото слева – сайт компании Тест Сити, занимающейся сертификацией товаров и услуг по различным государственным стандартам. Подробнее – <a href="#portfolio">в портфолио.</a></p>
-          </div>
-        </div>
-      </article>
-      <article class="what-we-do-type what-we-do-type__smm what-we-do-type__left">
-        <div class="wrapper">
-          <div class="what-we-do-type-container">
-            <h1 class="what-we-do-type--heading">Продивжение в социальных сетях</h1>
-            <p class="what-we-do-type--text">Ваш бизнес всегда должен быть на слуху, и для этого нет инструмента лучше, чем социальные сети. Наши инженеры общественного мнения – SMM-отдел, специализируется именно на этом.</p>
-            <a href="#" class="button button__cta">Это то, что мне нужно</a>
-            <p class="what-we-do-type--annotation">На фото справа – сообщество ВКонтакте магазина спортивных товаров «Спорт Точка» в г. Чита. Подробнее – <a href="#portfolio">в портфолио.</a></p>
-          </div>
-        </div>
-      </article>
-      <article class="what-we-do-type what-we-do-type__services what-we-do-type__right">
-        <div class="wrapper">
-          <div class="what-we-do-type-container">
-            <h1 class="what-we-do-type--heading">Сервисы и сложные проекты</h1>
-            <p class="what-we-do-type--text">У вас есть гениальная идея и средства для её осуществления. Осталось только найти правильные руки для её реализации. Ах, да, вы же только что их нашли!</p>
-            <a href="#" class="button button__cta">Это то, что мне нужно</a>
-            <p class="what-we-do-type--annotation">На фото слева – конструктор букетов для цветочного магазина Maison Des Fleurs. Подробнее – <a href="#portfolio">в&nbsp;портфолио.</a></p>
-          </div>
-        </div>
-      </article>
-    </section>
-    <section class="codex section section__padded">
-      <div class="wrapper codex-content">
-        <h1 class="section--heading">Кодекс</h1>
-        <p class="section--subheading">За любой организацией стоит набор принципов, которые держат её на плаву в непогоду. Мы пошли дальше и создали Кодекс Kraftsmen, который поможет спокойной плыть дальше в самый неспокойный шторм.<br><br>Вот некоторые параграфы из нашего кодекса</p>
-      </div>
-      <div class="codex-slider" id="codex-slider">
-        <div class="codex-slider-item">
-          <p class="codex-slider-item--text">Клиент в той же команде, что и мы. Наши цели в проекте совпадают на 100%.</p>
-          <span class="codex-slider-item--chapter">Глава 2, § 4. О клиентах</span>
-        </div>
-        <div class="codex-slider-item">
-          <p class="codex-slider-item--text">Клиент в той же команде, что и мы. Наши цели в проекте совпадают на 100%.</p>
-          <span class="codex-slider-item--chapter">Глава 2, § 4. О клиентах</span>
-        </div>
-        <div class="codex-slider-item">
-          <p class="codex-slider-item--text">Клиент в той же команде, что и мы. Наши цели в проекте совпадают на 100%.</p>
-          <span class="codex-slider-item--chapter">Глава 2, § 4. О клиентах</span>
-        </div>
-        <div class="codex-slider-item">
-          <p class="codex-slider-item--text">Клиент в той же команде, что и мы. Наши цели в проекте совпадают на 100%.</p>
-          <span class="codex-slider-item--chapter">Глава 2, § 4. О клиентах</span>
-        </div>
-        <div class="codex-slider-item">
-          <p class="codex-slider-item--text">Клиент в той же команде, что и мы. Наши цели в проекте совпадают на 100%.</p>
-          <span class="codex-slider-item--chapter">Глава 2, § 4. О клиентах</span>
-        </div>
-      </div>
-    </section>
-    <section class="portfolio section section__padded">
-      <div class="wrapper">
-        <h1 class="section--heading">Портфолио</h1>
-        <p class="section--subheading">Слова, которыми можно нас описать - это, конечно, хорошо. Но лучше всего за нас говорят наши работы.</p>
-        <article class="portfolio-case portfolio-case__left">
-          <div class="portfolio-case--picture">
-            <img src="dist/img/xim4_dribbble.png" alt="XIM4 Landing Page" width="100%">
-          </div>
-          <div class="portfolio-case-desc">
-            <h1 class="portfolio-case--heading">XIM4</h1>
-            <p class="portfolio-case--cat-wrap"><span class="portfolio-case--cat">Landing Page под ключ</span></p>
-            <p class="portfolio-case--text">Сайт продаёт приставку к XBOX, PS3 и PS4, позволяющую подключить к ним компьютерные клавиатуру и мышь для большей точности и удобства в некоторых играх.</p>
-            <a href="#" class="button button__cta button__portfolio-case">Смотреть кейс</a>
+    <div class="wrapper">
+      <section class="what-we-do section">
+        <h1 class="section--heading section--heading__nosub">Чем мы занимаемся</h1>
+        <article class="what-we-do-type what-we-do-type__lp what-we-do-type__left">
+          <div class="wrapper">
+            <div class="what-we-do-type-container">
+              <h1 class="what-we-do-type--heading">Landing Page</h1>
+              <p class="what-we-do-type--text">Продающая посадочная страница – ключ к росту продаж, если она сделана правильно. Мы – мастера по изготовлению таких ключей.</p>
+              <a href="#" class="button button__cta">Это то, что мне нужно</a>
+              <p class="what-we-do-type--annotation">На фото справа – Landing Page для продажи XIM4, устройства для подключения мыши и клавиатуры к игровой приставке. Подробнее – <a href="#portfolio">в портфолио.</a></p>
+            </div>
           </div>
         </article>
-        <article class="portfolio-case portfolio-case__right">
-          <div class="portfolio-case--picture">
-            <img src="dist/img/level_dribbble.png" alt="Level Оптика" width="100%">
-          </div>
-          <div class="portfolio-case-desc">
-            <h1 class="portfolio-case--heading">Level Оптика</h1>
-            <p class="portfolio-case--cat-wrap"><span class="portfolio-case--cat">Landing Page под ключ</span></p>
-            <p class="portfolio-case--text">Landing Page для продвижения скидочной акции на солнцезащитные очки известных брендов для компании, занимающейся реализацией очков (как солнцезащитных, так и диоптриевых) в г. Новосибирск.</p>
-            <a href="#" class="button button__cta button__portfolio-case">Смотреть кейс</a>
+        <article class="what-we-do-type what-we-do-type__corp what-we-do-type__right">
+          <div class="wrapper" >
+            <div class="what-we-do-type-container">
+              <h1 class="what-we-do-type--heading">Корпоративные сайты</h1>
+              <p class="what-we-do-type--text">Иногда мало просто продать, нужно ещё и донести информацию о бизнесе и завоевать репутацию. Команда Kraftsmen состоит из лучших веб-евангелистов, готовых поведать миру о вас.</p>
+              <a href="#" class="button button__cta">Это то, что мне нужно</a>
+              <p class="what-we-do-type--annotation">На фото слева – сайт компании Тест Сити, занимающейся сертификацией товаров и услуг по различным государственным стандартам. Подробнее – <a href="#portfolio">в портфолио.</a></p>
+            </div>
           </div>
         </article>
-        <a href="#" class="button button__stroke centered">Перейти в портфолио</a>
-      </div>
-    </section>
-    <section class="tech section section__padded">
-      <div class="wrapper">
-        <h1 class="section--heading">Технологии</h1>
-        <p class="section--subheading">Наши инструменты такие же, как и наши мастера: профессиональны, практичны и быстры в работе.</p>
-        <div class="tech-slider" id="tech-slider">
-          <div class="tech-slider-item">
-            <div class="tech-slider-item--logo">
-              <img src="dist/img/tech/laravel.png" alt="">
-            </div>
-            <div class="tech-slider-item-text">
-              <h1 class="tech-slider-item--heading">Laravel Framework</h1>
-              <p class="tech-slider-item--desc">Фреймворк для Backend-разработки, построенный на трёх очень важных для нас самих принципах: легкочитаемый код, скорость разработки и комплексность инструментария.</p>
+        <article class="what-we-do-type what-we-do-type__smm what-we-do-type__left">
+          <div class="wrapper">
+            <div class="what-we-do-type-container">
+              <h1 class="what-we-do-type--heading">Продивжение в социальных сетях</h1>
+              <p class="what-we-do-type--text">Ваш бизнес всегда должен быть на слуху, и для этого нет инструмента лучше, чем социальные сети. Наши инженеры общественного мнения – SMM-отдел, специализируется именно на этом.</p>
+              <a href="#" class="button button__cta">Это то, что мне нужно</a>
+              <p class="what-we-do-type--annotation">На фото справа – сообщество ВКонтакте магазина спортивных товаров «Спорт Точка» в г. Чита. Подробнее – <a href="#portfolio">в портфолио.</a></p>
             </div>
           </div>
-          <div class="tech-slider-item">
-            <div class="tech-slider-item--logo">
-              <img src="dist/img/tech/laravel.png" alt="">
-            </div>
-            <div class="tech-slider-item-text">
-              <h1 class="tech-slider-item--heading">Laravel Framework</h1>
-              <p class="tech-slider-item--desc">Фреймворк для Backend-разработки, построенный на трёх очень важных для нас самих принципах: легкочитаемый код, скорость разработки и комплексность инструментария.</p>
-            </div>
-          </div>
-          <div class="tech-slider-item">
-            <div class="tech-slider-item--logo">
-              <img src="dist/img/tech/laravel.png" alt="">
-            </div>
-            <div class="tech-slider-item-text">
-              <h1 class="tech-slider-item--heading">Laravel Framework</h1>
-              <p class="tech-slider-item--desc">Фреймворк для Backend-разработки, построенный на трёх очень важных для нас самих принципах: легкочитаемый код, скорость разработки и комплексность инструментария.</p>
+        </article>
+        <article class="what-we-do-type what-we-do-type__services what-we-do-type__right">
+          <div class="wrapper">
+            <div class="what-we-do-type-container">
+              <h1 class="what-we-do-type--heading">Сервисы и сложные проекты</h1>
+              <p class="what-we-do-type--text">У вас есть гениальная идея и средства для её осуществления. Осталось только найти правильные руки для её реализации. Ах, да, вы же только что их нашли!</p>
+              <a href="#" class="button button__cta">Это то, что мне нужно</a>
+              <p class="what-we-do-type--annotation">На фото слева – конструктор букетов для цветочного магазина Maison Des Fleurs. Подробнее – <a href="#portfolio">в&nbsp;портфолио.</a></p>
             </div>
           </div>
-          <div class="tech-slider-item">
-            <div class="tech-slider-item--logo">
-              <img src="dist/img/tech/laravel.png" alt="">
-            </div>
-            <div class="tech-slider-item-text">
-              <h1 class="tech-slider-item--heading">Laravel Framework</h1>
-              <p class="tech-slider-item--desc">Фреймворк для Backend-разработки, построенный на трёх очень важных для нас самих принципах: легкочитаемый код, скорость разработки и комплексность инструментария.</p>
-            </div>
+        </article>
+      </section>
+      <section class="codex section section__padded">
+        <div class="wrapper codex-content">
+          <h1 class="section--heading">Кодекс</h1>
+          <p class="section--subheading">За любой организацией стоит набор принципов, которые держат её на плаву в непогоду. Мы пошли дальше и создали Кодекс Kraftsmen, который поможет спокойной плыть дальше в самый неспокойный шторм.<br><br>Вот некоторые параграфы из нашего кодекса</p>
+        </div>
+        <div class="codex-slider" id="codex-slider">
+          <div class="codex-slider-item">
+            <p class="codex-slider-item--text">Клиент в той же команде, что и мы. Наши цели в проекте совпадают на 100%.</p>
+            <span class="codex-slider-item--chapter">Глава 2, § 4. О клиентах</span>
           </div>
-          <div class="tech-slider-item">
-            <div class="tech-slider-item--logo">
-              <img src="dist/img/tech/laravel.png" alt="">
+          <div class="codex-slider-item">
+            <p class="codex-slider-item--text">Клиент в той же команде, что и мы. Наши цели в проекте совпадают на 100%.</p>
+            <span class="codex-slider-item--chapter">Глава 2, § 4. О клиентах</span>
+          </div>
+          <div class="codex-slider-item">
+            <p class="codex-slider-item--text">Клиент в той же команде, что и мы. Наши цели в проекте совпадают на 100%.</p>
+            <span class="codex-slider-item--chapter">Глава 2, § 4. О клиентах</span>
+          </div>
+          <div class="codex-slider-item">
+            <p class="codex-slider-item--text">Клиент в той же команде, что и мы. Наши цели в проекте совпадают на 100%.</p>
+            <span class="codex-slider-item--chapter">Глава 2, § 4. О клиентах</span>
+          </div>
+          <div class="codex-slider-item">
+            <p class="codex-slider-item--text">Клиент в той же команде, что и мы. Наши цели в проекте совпадают на 100%.</p>
+            <span class="codex-slider-item--chapter">Глава 2, § 4. О клиентах</span>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio section section__padded">
+        <div class="wrapper">
+          <h1 class="section--heading">Портфолио</h1>
+          <p class="section--subheading">Слова, которыми можно нас описать - это, конечно, хорошо. Но лучше всего за нас говорят наши работы.</p>
+          <article class="portfolio-case portfolio-case__left">
+            <div class="portfolio-case--picture">
+              <img src="dist/img/xim4_dribbble.png" alt="XIM4 Landing Page" width="100%">
             </div>
-            <div class="tech-slider-item-text">
-              <h1 class="tech-slider-item--heading">Laravel Framework</h1>
-              <p class="tech-slider-item--desc">Фреймворк для Backend-разработки, построенный на трёх очень важных для нас самих принципах: легкочитаемый код, скорость разработки и комплексность инструментария.</p>
+            <div class="portfolio-case-desc">
+              <h1 class="portfolio-case--heading">XIM4</h1>
+              <p class="portfolio-case--cat-wrap"><span class="portfolio-case--cat">Landing Page под ключ</span></p>
+              <p class="portfolio-case--text">Сайт продаёт приставку к XBOX, PS3 и PS4, позволяющую подключить к ним компьютерные клавиатуру и мышь для большей точности и удобства в некоторых играх.</p>
+              <a href="#" class="button button__cta button__portfolio-case">Смотреть кейс</a>
+            </div>
+          </article>
+          <article class="portfolio-case portfolio-case__right">
+            <div class="portfolio-case--picture">
+              <img src="dist/img/level_dribbble.png" alt="Level Оптика" width="100%">
+            </div>
+            <div class="portfolio-case-desc">
+              <h1 class="portfolio-case--heading">Level Оптика</h1>
+              <p class="portfolio-case--cat-wrap"><span class="portfolio-case--cat">Landing Page под ключ</span></p>
+              <p class="portfolio-case--text">Landing Page для продвижения скидочной акции на солнцезащитные очки известных брендов для компании, занимающейся реализацией очков (как солнцезащитных, так и диоптриевых) в г. Новосибирск.</p>
+              <a href="#" class="button button__cta button__portfolio-case">Смотреть кейс</a>
+            </div>
+          </article>
+          <a href="#" class="button button__stroke centered">Перейти в портфолио</a>
+        </div>
+      </section>
+      <section class="tech section section__padded">
+        <div class="wrapper">
+          <h1 class="section--heading">Технологии</h1>
+          <p class="section--subheading" >Наши инструменты такие же, как и наши мастера: профессиональны, практичны и быстры в работе.</p>
+          <div class="tech-slider" id="tech-slider">
+            <div class="tech-slider-item">
+              <div class="tech-slider-item--logo">
+                <img src="dist/img/tech/laravel.png" alt="">
+              </div>
+              <div class="tech-slider-item-text">
+                <h1 class="tech-slider-item--heading">Laravel Framework</h1>
+                <p class="tech-slider-item--desc">Фреймворк для Backend-разработки, построенный на трёх очень важных для нас самих принципах: легкочитаемый код, скорость разработки и комплексность инструментария.</p>
+              </div>
+            </div>
+            <div class="tech-slider-item">
+              <div class="tech-slider-item--logo">
+                <img src="dist/img/tech/laravel.png" alt="">
+              </div>
+              <div class="tech-slider-item-text">
+                <h1 class="tech-slider-item--heading">Laravel Framework</h1>
+                <p class="tech-slider-item--desc">Фреймворк для Backend-разработки, построенный на трёх очень важных для нас самих принципах: легкочитаемый код, скорость разработки и комплексность инструментария.</p>
+              </div>
+            </div>
+            <div class="tech-slider-item">
+              <div class="tech-slider-item--logo">
+                <img src="dist/img/tech/laravel.png" alt="">
+              </div>
+              <div class="tech-slider-item-text">
+                <h1 class="tech-slider-item--heading">Laravel Framework</h1>
+                <p class="tech-slider-item--desc">Фреймворк для Backend-разработки, построенный на трёх очень важных для нас самих принципах: легкочитаемый код, скорость разработки и комплексность инструментария.</p>
+              </div>
+            </div>
+            <div class="tech-slider-item">
+              <div class="tech-slider-item--logo">
+                <img src="dist/img/tech/laravel.png" alt="">
+              </div>
+              <div class="tech-slider-item-text">
+                <h1 class="tech-slider-item--heading">Laravel Framework</h1>
+                <p class="tech-slider-item--desc">Фреймворк для Backend-разработки, построенный на трёх очень важных для нас самих принципах: легкочитаемый код, скорость разработки и комплексность инструментария.</p>
+              </div>
+            </div>
+            <div class="tech-slider-item">
+              <div class="tech-slider-item--logo">
+                <img src="dist/img/tech/laravel.png" alt="">
+              </div>
+              <div class="tech-slider-item-text">
+                <h1 class="tech-slider-item--heading">Laravel Framework</h1>
+                <p class="tech-slider-item--desc">Фреймворк для Backend-разработки, построенный на трёх очень важных для нас самих принципах: легкочитаемый код, скорость разработки и комплексность инструментария.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="team section section__padded">
-      <div class="wrapper">
-        <h1 class="section--heading">Команда</h1>
-        <p class="section--subheading">В мире много технологий, приёмов и методологий, но именно люди достигают цели. Вот люди, которые готовы помочь вам достичь вашей:</p>
-        <div class="team-cards-wrapper">
-          <article class="team-card">
-            <div class="team-card--picture">
-              <img src="dist/img/team/tema.png" alt="Артём Федотов">
-            </div>
-            <h1 class="team-card--name">Артём Федотов</h1>
-            <p class="team-card--position">Руководитель отдела продвижения</p>
-            <div class="team-card-socials">
-              <a href="#">
-                <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-tg.svg" alt="Telegram">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-mail.svg" alt="Email">
-              </a>
-            </div>
-          </article>
-          <article class="team-card">
-            <div class="team-card--picture">
-              <img src="dist/img/team/serega.png" alt="Сергей Платонов">
-            </div>
-            <h1 class="team-card--name">Сергей Платонов</h1>
-            <p class="team-card--position">Старший фронтенд разработчик</p>
-            <div class="team-card-socials">
-              <a href="#">
-                <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-tg.svg" alt="Telegram">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-mail.svg" alt="Email">
-              </a>
-            </div>
-          </article>
-          <article class="team-card">
-            <div class="team-card--picture">
-              <img src="dist/img/team/max.png" alt="Максим Назаров">
-            </div>
-            <h1 class="team-card--name">Максим Назаров</h1>
-            <p class="team-card--position">Старший бэкенд разработчик</p>
-            <div class="team-card-socials">
-              <a href="#">
-                <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-tg.svg" alt="Telegram">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-mail.svg" alt="Email">
-              </a>
-            </div>
-          </article>
-          <article class="team-card">
-            <div class="team-card--picture">
-              <img src="dist/img/team/misha.png" alt="Михаил Кононенко">
-            </div>
-            <h1 class="team-card--name">Михаил Кононенко</h1>
-          <p class="team-card--position">Руководитель отдела разработки и арт-директор</p>
-            <div class="team-card-socials">
-              <a href="#">
-                <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-tg.svg" alt="Telegram">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-mail.svg" alt="Email">
-              </a>
-            </div>
-          </article>
-          <article class="team-card">
-            <div class="team-card--picture">
-              <img src="dist/img/team/liza.png" alt="Елизавета Куренина">
-            </div>
-            <h1 class="team-card--name">Елизавета Куренина</h1>
-            <p class="team-card--position">UI/UX Дизайнер</p>
-            <div class="team-card-socials">
-              <a href="#">
-                <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-tg.svg" alt="Telegram">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-mail.svg" alt="Email">
-              </a>
-            </div>
-          </article>
-          <article class="team-card">
-            <div class="team-card--picture">
-              <img src="dist/img/team/mishanya.png" alt="Михаил Петрин">
-            </div>
-            <h1 class="team-card--name">Михаил Петрин</h1>
-            <p class="team-card--position">SMM-менеджер</p>
-            <div class="team-card-socials">
-              <a href="#">
-                <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-tg.svg" alt="Telegram">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-mail.svg" alt="Email">
-              </a>
-            </div>
-          </article>
-          <article class="team-card">
-            <div class="team-card--picture">
-              <img src="dist/img/team/slavik.png" alt="Вячеслав Дрючин">
-            </div>
-            <h1 class="team-card--name">Вячеслав Дрючин</h1>
-            <p class="team-card--position">Фронтенд разработчик</p>
-            <div class="team-card-socials">
-              <a href="#">
-                <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-tg.svg" alt="Telegram">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-mail.svg" alt="Email">
-              </a>
-            </div>
-          </article>
-          <article class="team-card">
-            <div class="team-card--picture">
-              <img src="dist/img/team/utkina.png" alt="Елена Уткина">
-            </div>
-            <h1 class="team-card--name">Елена Уткина</h1>
-            <p class="team-card--position">UI/UX дизайнер</p>
-            <div class="team-card-socials">
-              <a href="#">
-                <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-tg.svg" alt="Telegram">
-              </a>
-              <a href="#">
-                <img src="dist/img/icons/team-mail.svg" alt="Email">
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="contacts section section__padded">
-      <div class="wrapper">
-        <h1 class="section--heading section--heading__nosub">Контакты</h1>
-        <div class="contacts-card">
-          <p class="contacts-card--paragraph">Мы любим общаться и часто можем помочь советом. Вам достаточно просто описать вашу задачу, а мы скажем как можно её решить.</p>
-          <form action="" class="contacts-card--form">
-            <div class="contacts-card-input contacts-card-input__name">
-              <div class="contacts-card-input--icon">
-                <img src="dist/img/icons/name.svg" alt="">
+      </section>
+      <section class="team section section__padded">
+        <div class="wrapper">
+          <h1 class="section--heading">Команда</h1>
+          <p class="section--subheading">В мире много технологий, приёмов и методологий, но именно люди достигают цели. Вот люди, которые готовы помочь вам достичь вашей:</p>
+          <div class="team-cards-wrapper">
+            <article class="team-card">
+              <div class="team-card--picture">
+                <img src="dist/img/team/tema.png" alt="Артём Федотов">
               </div>
-              <input type="text" class="contacts-card-input--field" placeholder="Ваше имя">
-            </div>
-            <div class="contacts-card-input contacts-card-input__email">
-              <div class="contacts-card-input--icon">
-                <img src="dist/img/icons/email.svg" alt="">
-              </div>
-              <input type="text" class="contacts-card-input--field" placeholder="Ваш email">
-            </div>
-            <div class="contacts-card-input contacts-card-input__message">
-              <div class="contacts-card-input--icon">
-                <img src="dist/img/icons/message.svg" alt="">
-              </div>
-              <textarea class="contacts-card-input--field" placeholder="Сообщение"></textarea>
-            </div>
-            <div class="contacts-card-buttons">
-              <div class="contacts-card-socbuttons">
-                <a href="#" class="contacts-card--link contacts-card--link__vk">
-                  <img src="dist/img/icons/contacts/vk.svg" alt="vk.com/kraftsmen">
+              <h1 class="team-card--name">Артём Федотов</h1>
+              <p class="team-card--position">Руководитель отдела продвижения</p>
+              <div class="team-card-socials">
+                <a href="#">
+                  <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
                 </a>
-                <a href="#" class="contacts-card--link contacts-card--link__mail">
-                  <img src="dist/img/icons/contacts/mail.svg" alt="team@kraftsmen.ru">
+                <a href="#">
+                  <img src="dist/img/icons/team-tg.svg" alt="Telegram">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-mail.svg" alt="Email">
                 </a>
               </div>
-              <div class="contacts-card-send">
-                <a href="#" class="button button__cta button__iconed"><img src="dist/img/icons/contacts/send.svg" alt="Отправить"><span>Отправить</span></a>
+            </article>
+            <article class="team-card">
+              <div class="team-card--picture">
+                <img src="dist/img/team/serega.png" alt="Сергей Платонов">
               </div>
-            </div>
-          </form>
+              <h1 class="team-card--name">Сергей Платонов</h1>
+              <p class="team-card--position">Старший фронтенд разработчик</p>
+              <div class="team-card-socials">
+                <a href="#">
+                  <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-tg.svg" alt="Telegram">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-mail.svg" alt="Email">
+                </a>
+              </div>
+            </article>
+            <article class="team-card">
+              <div class="team-card--picture">
+                <img src="dist/img/team/max.png" alt="Максим Назаров">
+              </div>
+              <h1 class="team-card--name">Максим Назаров</h1>
+              <p class="team-card--position">Старший бэкенд разработчик</p>
+              <div class="team-card-socials">
+                <a href="#">
+                  <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-tg.svg" alt="Telegram">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-mail.svg" alt="Email">
+                </a>
+              </div>
+            </article>
+            <article class="team-card">
+              <div class="team-card--picture">
+                <img src="dist/img/team/misha.png" alt="Михаил Кононенко">
+              </div>
+              <h1 class="team-card--name">Михаил Кононенко</h1>
+            <p class="team-card--position">Руководитель отдела разработки и арт-директор</p>
+              <div class="team-card-socials">
+                <a href="#">
+                  <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-tg.svg" alt="Telegram">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-mail.svg" alt="Email">
+                </a>
+              </div>
+            </article>
+            <article class="team-card">
+              <div class="team-card--picture">
+                <img src="dist/img/team/liza.png" alt="Елизавета Куренина">
+              </div>
+              <h1 class="team-card--name">Елизавета Куренина</h1>
+              <p class="team-card--position">UI/UX Дизайнер</p>
+              <div class="team-card-socials">
+                <a href="#">
+                  <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-tg.svg" alt="Telegram">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-mail.svg" alt="Email">
+                </a>
+              </div>
+            </article>
+            <article class="team-card">
+              <div class="team-card--picture">
+                <img src="dist/img/team/mishanya.png" alt="Михаил Петрин">
+              </div>
+              <h1 class="team-card--name">Михаил Петрин</h1>
+              <p class="team-card--position">SMM-менеджер</p>
+              <div class="team-card-socials">
+                <a href="#">
+                  <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-tg.svg" alt="Telegram">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-mail.svg" alt="Email">
+                </a>
+              </div>
+            </article>
+            <article class="team-card">
+              <div class="team-card--picture">
+                <img src="dist/img/team/slavik.png" alt="Вячеслав Дрючин">
+              </div>
+              <h1 class="team-card--name">Вячеслав Дрючин</h1>
+              <p class="team-card--position">Фронтенд разработчик</p>
+              <div class="team-card-socials">
+                <a href="#">
+                  <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-tg.svg" alt="Telegram">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-mail.svg" alt="Email">
+                </a>
+              </div>
+            </article>
+            <article class="team-card">
+              <div class="team-card--picture">
+                <img src="dist/img/team/utkina.png" alt="Елена Уткина">
+              </div>
+              <h1 class="team-card--name">Елена Уткина</h1>
+              <p class="team-card--position">UI/UX дизайнер</p>
+              <div class="team-card-socials">
+                <a href="#">
+                  <img src="dist/img/icons/team-vk.svg" alt="Вконтакте">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-tg.svg" alt="Telegram">
+                </a>
+                <a href="#">
+                  <img src="dist/img/icons/team-mail.svg" alt="Email">
+                </a>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="contacts section section__padded">
+        <div class="wrapper">
+          <h1 class="section--heading section--heading__nosub">Контакты</h1>
+          <div class="contacts-card">
+            <p class="contacts-card--paragraph">Мы любим общаться и часто можем помочь советом. Вам достаточно просто описать вашу задачу, а мы скажем как можно её решить.</p>
+            <form action="" class="contacts-card--form">
+              <div class="contacts-card-input contacts-card-input__name">
+                <div class="contacts-card-input--icon">
+                  <img src="dist/img/icons/name.svg" alt="">
+                </div>
+                <input type="text" class="contacts-card-input--field" placeholder="Ваше имя">
+              </div>
+              <div class="contacts-card-input contacts-card-input__email">
+                <div class="contacts-card-input--icon">
+                  <img src="dist/img/icons/email.svg" alt="">
+                </div>
+                <input type="text" class="contacts-card-input--field" placeholder="Ваш email">
+              </div>
+              <div class="contacts-card-input contacts-card-input__message">
+                <div class="contacts-card-input--icon">
+                  <img src="dist/img/icons/message.svg" alt="">
+                </div>
+                <textarea class="contacts-card-input--field" placeholder="Сообщение"></textarea>
+              </div>
+              <div class="contacts-card-buttons">
+                <div class="contacts-card-socbuttons">
+                  <a href="#" class="contacts-card--link contacts-card--link__vk">
+                    <img src="dist/img/icons/contacts/vk.svg" alt="vk.com/kraftsmen">
+                  </a>
+                  <a href="#" class="contacts-card--link contacts-card--link__mail">
+                    <img src="dist/img/icons/contacts/mail.svg" alt="team@kraftsmen.ru">
+                  </a>
+                </div>
+                <div class="contacts-card-send">
+                  <a href="#" class="button button__cta button__iconed"><img src="dist/img/icons/contacts/send.svg" alt="Отправить"><span>Отправить</span></a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
-    <footer class="footer">
-      <div class="wrapper footer-content">
-        <div class="footer--logo">
-          <img src="dist/img/footer-logo.png" alt="">
+
+      <footer class="footer">
+        <div class="wrapper footer-content">
+          <div class="footer--logo">
+            <img src="dist/img/footer-logo.png" alt="">
+          </div>
+          <nav class="footer-nav">
+            <ul class="footer-nav-ul">
+              <li class="footer-nav--item"><a href="#">Главная</a></li>
+              <li class="footer-nav--item"><a href="#">Услуги</a></li>
+              <li class="footer-nav--item"><a href="#">Кодекс</a></li>
+              <li class="footer-nav--item"><a href="#">Портфолио</a></li>
+              <li class="footer-nav--item"><a href="#">Технологии</a></li>
+              <li class="footer-nav--item"><a href="#">Команда</a></li>
+              <li class="footer-nav--item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="footer-contacts">
+            <a href="https://vk.com/kraftsmen" class="footer-contacts--link"><img src="dist/img/footer-vk.png" alt="">/kraftsmen</a>
+            <a href="mailto:team@kraftsmen.ru" class="footer-contacts--link"><img src="dist/img/footer-email.png" alt="">team@kraftsmen.ru</a>
+            <p class="footer-copy">&copy; Kraftsmen, 2017. Все права защищены</p>
+          </div>
         </div>
-        <nav class="footer-nav">
-          <ul class="footer-nav-ul">
-            <li class="footer-nav--item"><a href="#">Главная</a></li>
-            <li class="footer-nav--item"><a href="#">Услуги</a></li>
-            <li class="footer-nav--item"><a href="#">Кодекс</a></li>
-            <li class="footer-nav--item"><a href="#">Портфолио</a></li>
-            <li class="footer-nav--item"><a href="#">Технологии</a></li>
-            <li class="footer-nav--item"><a href="#">Команда</a></li>
-            <li class="footer-nav--item"><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="footer-contacts">
-          <a href="https://vk.com/kraftsmen" class="footer-contacts--link"><img src="dist/img/footer-vk.png" alt="">/kraftsmen</a>
-          <a href="mailto:team@kraftsmen.ru" class="footer-contacts--link"><img src="dist/img/footer-email.png" alt="">team@kraftsmen.ru</a>
-          <p class="footer-copy">&copy; Kraftsmen, 2017. Все права защищены</p>
-        </div>
-      </div>
-    </footer>
-    <script src="dist/js/bundle.js" defer charset="utf-8"></script>
+      </footer>
+        
+      <script src="dist/js/bundle.js" defer charset="utf-8"></script>
+
   </body>
 </html>
