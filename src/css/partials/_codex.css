@@ -1,14 +1,14 @@
 .codex {
-  background: radial-gradient(363.50px at 50% 50%, #FFFFFF 0%, #FFFFFF 72.32%, rgba(255, 255, 255, 0) 100%), url('../img/codex-pattern.png') 50% / 35%;
+  background: radial-gradient(363.50px at 50% 50%, #FFFFFF 0%, #FFFFFF 72.32%, rgba(255, 255, 255, 0) 100%), url('/src/img/codex-pattern.png') 50% / 35%;
 }
 
 .codex-slider-item {
   padding: 50px 80px;
   background: $white;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, .04);
-  margin: 50px 20px;
-  width: calc(1076px / 8 * 6);
-  background-image: url('../img/paragraph.png');
+  margin: 0 auto;
+  width: calc(100% / 8 * 6);
+  background-image: url('/src/img/paragraph.png');
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: left 20px;
@@ -18,7 +18,7 @@
 }
 
 .codex-slider-item--text {
-  font-size: 33px;
+  font-size: 160%;
   text-align: center;
   line-height: 48px;
 
@@ -45,7 +45,7 @@
 
 .codex-slider-item--chapter {
   display: block;
-  width: 100%;
+  max-width: 100%;
   color: $annotation;
 }
 
@@ -70,4 +70,26 @@
 
 .codex-slider .flickity-prev-next-button.previous {
   left: 200px;
+}
+
+@media screen and (min-width:320px){
+  .codex-slider-item {
+    padding: 0px 0px;
+    background: $white;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .04);
+    margin: 0 auto;
+    width: calc(100% / 8 * 6);
+    background-image: url('/src/img/paragraph.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left 20px;
+    opacity: .6;
+    transform: scale(.85);
+    transition: opacity 2s, transform 1s;
+  }
+  .section--subheading {
+    width: 100%;
+    padding: 15px;
+    text-align: center
+  }
 }

@@ -11,9 +11,9 @@
 .what-we-do-type__right {
   background-position: left;
   text-align: right;
-
+  
   .what-we-do-type-container {
-    margin-left: calc(100% / 8 * 3.5);
+    margin-left: calc(100% / 8 * 4.5);
   }
 }
 
@@ -28,19 +28,19 @@
 }
 
 .what-we-do-type__lp {
-  background-image: url('../img/lp-mockup.png');
+  background-image: url('/src/img/lp-mockup.png');
 }
 
 .what-we-do-type__corp {
-  background-image: url('../img/corp-mockup.png');
+  background-image: url('/src/img/corp-mockup.png');
 }
 
 .what-we-do-type__smm {
-  background-image: url('../img/smm-mockup.png');
+  background-image: url('/src/img/smm-mockup.png');
 }
 
 .what-we-do-type__services {
-  background-image: url('../img/services-mockup.png');
+  background-image: url('/src/img/services-mockup.png');
 }
 
 .what-we-do-type--heading {
@@ -64,4 +64,40 @@
   color: $annotation;
   font-size: 14px;
   line-height: 1.5;
+}
+
+@media screen and (min-width:320px) {
+  .what-we-do-type__lp {
+    background-image: none;
+  }
+
+  .what-we-do-type__corp {
+    background-image: none;
+  }
+
+  .what-we-do-type__smm {
+    background-image: none;
+  }
+
+  .what-we-do-type__services {
+    background-image: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .what-we-do-type__lp {
+    background-image: url('/src/img/lp-mockup.png');
+  }
+
+  .what-we-do-type__corp {
+    background-image: url('/src/img/corp-mockup.png');
+  }
+
+  .what-we-do-type__smm {
+    background-image: url('/src/img/smm-mockup.png');
+  }
+
+  .what-we-do-type__services {
+    background-image: url('/src/img/services-mockup.png');
+  }
 }

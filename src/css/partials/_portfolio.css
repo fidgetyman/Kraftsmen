@@ -57,3 +57,56 @@
   align-self: center;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
+@media screen and (min-width:320px) {
+  .portfolio-case {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-case-desc {
+    padding: 0 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-case--picture {
+    width: 100%;
+  }
+  .portfolio-case-desc h1, p{
+    text-align: center;
+  }
+  .button__portfolio-case {
+    width: 100%;
+  }
+  .portfolio-case-desc {
+    padding: 0 0px;
+  }
+}
+@media screen and (min-width:1024px) {
+  .portfolio-case {
+    flex-direction: row;
+  }
+  .portfolio-case:nth-child(2n){
+    flex-direction: row-reverse;
+  }
+  .portfolio-case--picture {
+    width: calc((100% / 8 * 3) + (30px * 2));
+  }
+  .portfolio-case-desc {
+    padding: 0 60px;
+    width: calc((100% / 8 * 5) + (30px * 5));
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-case-desc h1,p {
+    text-align: left;
+  }
+  .button__portfolio-case {
+    width: calc(100% / 5 * 3);
+  }
+  .portfolio-case-desc {
+    padding: 0 60px;
+    width: calc((100% / 8 * 5) + (30px * 5));
+    display: flex;
+    flex-direction: column;
+  }
+}
